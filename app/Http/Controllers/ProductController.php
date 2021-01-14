@@ -42,7 +42,6 @@ class ProductController extends Controller
             'name' => $request->get('name'),
             'description' => $request->get('description'),
             'price' => $request->get('price'),
-            'count' => $request->get('count'),
         ]);
         return redirect('/products');
     }

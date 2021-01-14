@@ -385,6 +385,21 @@ h6, .h6 {
   font-size: 0.9rem;
 }
 
+.table {
+  table-layout: fixed;
+  width: 100px;
+}
+
+.td {
+  white-space: nowrap;
+  overflow: hidden;         /* <- this does seem to be required */
+  text-overflow: ellipsis;
+}
+
+.table-gr {
+  background:#edeff1;
+}
+
 .lead {
   font-size: 1.125rem;
   font-weight: 300;

@@ -2,7 +2,9 @@
 
 @section('content')
 <style>
-div {text-align: center;}
+    div {
+        text-align: center;
+    }
 </style>
 <div class="container">
     <div class="row justify-content-center">
@@ -27,6 +29,16 @@ div {text-align: center;}
                             </tr>
 
                         </table>
+                        <form method="POST" action="/products/{{$products}}">
+
+                            @csrf
+                            @method('DELETE')
+
+                            <button class="btn btn-danger btn-sm">
+                                Delete
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </button>
+                        </form>
 
                         <form method="GET" action="{{ url('/products') }}">
                             <!-- "{{config('app.url')}}/products">  -->

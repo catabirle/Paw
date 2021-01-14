@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+div {text-align: center;}
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,7 +17,7 @@
                                 @csrf
                                 
                                 <div class="form-input">
-                                    <label> Name</label>
+                                    <label> Title</label>
                                     <input type="text" name="name">
                                 </div>
 
@@ -24,12 +27,7 @@
                                 </div>
 
                                 <div class="form-input">
-                                    <label> Price</label>
-                                    <input type="text" name="count">
-                                </div>
-
-                                <div class="form-input">
-                                    <label>Count</label>
+                                    <label>Tags</label>
                                     <input type="text" name="price">
                                 </div>
 
